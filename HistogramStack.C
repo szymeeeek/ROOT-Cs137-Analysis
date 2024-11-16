@@ -12,7 +12,6 @@ Bool_t HistogramStack(){
 
     auto h1 = new TH1F("h1","test hstack",nBins,-4,10);
     h1->FillRandom("gaus",20000);
-    gaus->SetParameters(1000, 0, 1);
     h1->SetFillColor(28);
     hs->Add(h1);
 
